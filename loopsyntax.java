@@ -4,6 +4,7 @@ public class loopsntax {
         dowhile.doloop();  // Calls the do-while loop method
         forloop.forloopsyn();  // Calls the for loop method
         whileloop.whileloopsyn();  // Calls the while loop method
+        forarray.forarraysyn(); // Calls the for array loop method
     }
 
     // Class demonstrating the use of a do-while loop
