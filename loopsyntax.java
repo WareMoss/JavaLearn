@@ -10,4 +10,11 @@ class dowhile{
         }while(i<5);
       }
   }
+  class forloop { // starts index at 0 so prints 0 to 4
+    public static void forloopsyn(){
+        for(int i = 0; i < 5; i++ ){
+            System.out.println(i);
+        }
+    }
+  }
 }
