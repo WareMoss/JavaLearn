@@ -174,5 +174,118 @@ public class collections {
         // - Pop: Removes and returns the top element.
         // - Peek: Returns the top element without removing it.
         // - Use Stack when you need a LIFO data structure.
+
+        // Using a Vector
+        Vector<String> vector = new Vector<>();  // Creating a synchronized Vector of Strings
+        vector.add("Alpha");  // Adding elements to the Vector
+        vector.add("Beta");
+        vector.add("Gamma");
+
+        // Iterates over the elements in the Vector
+        for (String item : vector) {
+            System.out.println(item);
+        }
+
+        // Vector characteristics:
+        // - Represents a resizable array that is synchronized.
+        // - Allows duplicate elements.
+        // - Allows null elements.
+        // - Thread-safe, but slower than ArrayList due to synchronization overhead.
+        // - Use Vector when you need a thread-safe, dynamically resizable array.
+
+        // Using a BitSet
+        BitSet bitSet = new BitSet();  // Creating a BitSet
+        bitSet.set(0);  // Setting the first bit to true
+        bitSet.set(2);  // Setting the third bit to true
+
+        // Iterates over the set bits
+        for (int i = 0; i < bitSet.length(); i++) {
+            if (bitSet.get(i)) {
+                System.out.println("Bit " + i + " is set.");
+            }
+        }
+
+        // BitSet characteristics:
+        // - Represents a set of bits that grows as needed.
+        // - Provides methods to set, clear, and check bits.
+        // - Efficient for managing and performing operations on a large number of bits.
+        // - Use BitSet when working with a large set of binary data.
+
+
+        // Using an Enumeration
+        Enumeration<String> enumeration = vector.elements();  // Creating an Enumeration for the Vector
+        System.out.println("Enumeration elements:");
+        while (enumeration.hasMoreElements()) {
+            System.out.println(enumeration.nextElement());
+        }
+
+        // Enumeration characteristics:
+        // - Legacy interface for iterating through a collection.
+        // - Replaced by Iterator, but still used with older classes like Vector and Hashtable.
+        // - Does not support element removal.
+        // - Use Enumeration when working with legacy code that requires it.
+
+
+        // Using a Random
+        Random random = new Random();  // Creating a Random number generator
+        int randomNumber = random.nextInt(100);  // Generating a random number between 0 and 99
+        System.out.println("Random number: " + randomNumber);
+
+        // Random characteristics:
+        // - Provides methods for generating random numbers of different types.
+        // - Can be used for generating random booleans, integers, floats, etc.
+        // - Use Random when you need to generate random numbers for various purposes.
+
+
+        // Using a Scanner
+        Scanner scanner = new Scanner(System.in);  // Creating a Scanner to read input from the console
+        System.out.print("Enter a number: ");
+        int input = scanner.nextInt();  // Reading an integer input from the user
+        System.out.println("You entered: " + input);
+
+        // Scanner characteristics:
+        // - Utility class for parsing primitive types and strings using regular expressions.
+        // - Can be used to read input from various sources like console, file, or string.
+        // - Use Scanner for simple and user-friendly input handling.
+
+
+        // Using a Timer and TimerTask
+        TimerTask task = new TimerTask() {  // Creating a TimerTask for scheduling a task
+            @Override
+            public void run() {
+                System.out.println("TimerTask executed!");
+            }
+        };
+        Timer timer = new Timer();  // Creating a Timer
+        timer.schedule(task, 2000);  // Scheduling the task to run after 2 seconds
+
+        // Timer and TimerTask characteristics:
+        // - Timer schedules tasks for future execution in a background thread.
+        // - TimerTask is an abstract class representing a task that can be scheduled.
+        // - Use Timer and TimerTask for scheduling tasks that need to be executed later.
+
+
+        // Using a UUID
+        UUID uuid = UUID.randomUUID();  // Generating a random UUID
+        System.out.println("Generated UUID: " + uuid);
+
+        // UUID characteristics:
+        // - Represents a Universally Unique Identifier (UUID) that is 128 bits long.
+        // - Guarantees uniqueness across time and space.
+        // - Use UUID when you need to generate unique identifiers for objects or entities.
+
+
+        // Using Properties
+        Properties properties = new Properties();  // Creating a Properties object
+        properties.setProperty("username", "admin");  // Setting properties
+        properties.setProperty("password", "12345");
+        System.out.println("Properties: " + properties);
+
+        // Properties characteristics:
+        // - Represents a persistent set of key-value pairs, typically used for configuration.
+        // - Supports both key-value pairs and default values.
+        // - Use Properties for managing configuration settings or application properties.
+
+
     }
 }
