@@ -17,4 +17,13 @@ class dowhile{
         }
     }
   }
+  class whileloop{
+    public static void whileloopsyn() {
+        int i = 0;
+        while(i < 5){
+            System.out.print(i); // cannot initalise variables in while loop
+            i++;
+          }
+      }
+  }
 }
