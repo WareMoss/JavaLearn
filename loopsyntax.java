@@ -7,6 +7,7 @@ public class loopsntax {
     }
 
     // Class demonstrating the use of a do-while loop
+    // follows syntax do - code to be executed - while ( condition)
     static class dowhile {
         public static void doloop() {
             int i = 0;
@@ -19,6 +20,7 @@ public class loopsntax {
     }
 
     // Class demonstrating the use of a for loop
+    // follows syntax for (initialization; condition; update)
     static class forloop { // Starts index at 0, so it prints 0 to 4
         public static void forloopsyn() {
             // for loop with an initialization, condition, and increment statement
@@ -29,6 +31,7 @@ public class loopsntax {
     }
 
     // Class demonstrating the use of a while loop
+    //  follows syntax while (condition) - code to be executed
     static class whileloop {
         public static void whileloopsyn() {
             int i = 0;
@@ -39,4 +42,14 @@ public class loopsntax {
             }
         }
     }
+    // Class demonstrating the use of a for loop including an array
+    // follows syntax for (type element : array/collection)
+    static class forarray{
+    public static void forarraysyn() {
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int number : numbers) {
+            System.out.println(number); // iterates over elements in array and prints them to the screen
+        }
+    }
+}
 }
